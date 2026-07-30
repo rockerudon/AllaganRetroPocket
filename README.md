@@ -49,5 +49,3 @@ Settings are stored per system. Available options depend on the selected Libretr
 ## License
 
 Allagan Retro Pocket is distributed under the GNU Affero General Public License version 3 or later. See `LICENSE.md`, `NOTICE` and `THIRD-PARTY-NOTICES.md`.
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow.svg?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/rockmizx)
