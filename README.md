@@ -2,6 +2,15 @@
   <img src="Images/icon.png" width="160" alt="Allagan Retro Pocket icon">
 </p>
 
+<p align="center">
+  <a href="https://buymeacoffee.com/rockmizx">
+    <img
+      src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow.svg?style=flat&logo=buy-me-a-coffee"
+      alt="Buy Me A Coffee"
+    >
+  </a>
+</p>
+
 # Allagan Retro Pocket
 
 Allagan Retro Pocket is a multi-system Libretro frontend that runs inside FINAL FANTASY XIV through Dalamud. It keeps a local game library and provides controller support, per-system settings, save states, memory-card saves, firmware management and quick gameplay controls.
