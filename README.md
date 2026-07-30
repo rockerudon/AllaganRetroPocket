@@ -36,18 +36,6 @@ Settings are stored per system. Available options depend on the selected Libretr
 <p align="center">
   <img width="776" height="622" alt="image" src="https://github.com/user-attachments/assets/de977794-8fff-4e29-9372-85be7f078df4" />
 </p>
-## Building
-
-The project targets .NET 10 and Dalamud API 15.
-
-```powershell
-dotnet restore .\AllaganPocket.csproj --locked-mode
-dotnet build .\AllaganPocket.csproj -c Release --no-restore
-```
-
-Libretro core binaries are not committed to this repository. Put compatible `*_libretro.dll` files in `Cores`, required support files in `Cores/SystemFiles`, and keep the corresponding source and license notices beside the cores you distribute.
-
-Do not commit ROMs, protected BIOS files or proprietary firmware.
 
 ## License
 
