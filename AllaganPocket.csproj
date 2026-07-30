@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <IsPackable>false</IsPackable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>AllaganPocket</AssemblyName>
+    <RootNamespace>AllaganPocket</RootNamespace>
+    <Version>0.14.8</Version>
+    <Authors>rockerudon</Authors>
+    <Description>Allagan Retro Pocket is an in-game multi-system Libretro emulator for FFXIV.</Description>
+    <Copyright>Copyright (c) 2026 rockerudon</Copyright>
+    <RepositoryUrl>https://github.com/rockerudon/AllaganRetroPocket</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode Condition="'$(ContinuousIntegrationBuild)' == 'true'">true</RestoreLockedMode>
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
+    <DalamudLibPath>$(DALAMUD_HOME)/</DalamudLibPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Cores\*_libretro.dll;Cores\*-LICENSE.txt;Cores\*-SOURCE.txt;Cores\CORE-SOURCES.txt;Cores\GPL-*.txt" Condition="Exists('Cores')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Cores\SystemFiles\**\*" Condition="Exists('Cores\SystemFiles')"
+             Exclude="Cores\SystemFiles\PPSSPP\debugger\**\*;Cores\SystemFiles\PPSSPP\lang\**\*;Cores\SystemFiles\PPSSPP\mime\**\*;Cores\SystemFiles\PPSSPP\shaders\**\*;Cores\SystemFiles\PPSSPP\themes\**\*;Cores\SystemFiles\PPSSPP\ui_images\**\*;Cores\SystemFiles\PPSSPP\upload\**\*;Cores\SystemFiles\PPSSPP\Inconsolata-Regular.ttf;Cores\SystemFiles\PPSSPP\Roboto_Condensed-*.ttf;Cores\SystemFiles\PPSSPP\gamecontrollerdb.txt;Cores\SystemFiles\PPSSPP\sfx_*.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Frontend\Icons\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="LICENSE.md;NOTICE;THIRD-PARTY-NOTICES.md;images\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System" />
+    <Using Include="System.Collections" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Numerics" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio.WinMM" Version="2.3.0" />
+    <PackageReference Include="NAudio.Wasapi" Version="2.3.0" />
+    <PackageReference Include="Vortice.Direct3D11" Version="3.8.3" />
+  </ItemGroup>
+</Project>

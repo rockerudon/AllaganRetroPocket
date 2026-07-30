@@ -1,0 +1,29 @@
+# Build output
+bin/
+obj/
+artifacts/
+TestResults/
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local emulator payload and user data
+Cores/*
+!Cores/README.md
+Emulator/
+
+# Packages and archives
+*.nupkg
+*.snupkg
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
