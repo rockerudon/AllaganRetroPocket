@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>AllaganPocket</AssemblyName>
     <RootNamespace>AllaganPocket</RootNamespace>
-    <Version>0.14.8</Version>
+    <Version>0.14.8.0</Version>
     <Authors>rockerudon</Authors>
     <Description>Allagan Retro Pocket is an in-game multi-system Libretro emulator for FFXIV.</Description>
     <Copyright>Copyright (c) 2026 rockerudon</Copyright>

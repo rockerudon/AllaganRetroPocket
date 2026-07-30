@@ -3,7 +3,7 @@
     "Author": "rockerudon",
     "Name": "Allagan Retro Pocket",
     "InternalName": "AllaganPocket",
-    "AssemblyVersion": "0.14.8",
+    "AssemblyVersion": "0.14.8.0",
     "Description": "Import your ROM library and play supported retro games without leaving FFXIV. Allagan Retro Pocket runs Libretro cores in-game with per-system controls, controller support, save states, memory-card saves, firmware management and quick gameplay controls.\n\nCommand:\n/retro — Open Allagan Retro Pocket.",
     "Punchline": "A multi-system Libretro emulator that runs inside FFXIV.",
     "RepoUrl": "https://github.com/rockerudon/AllaganRetroPocket",
