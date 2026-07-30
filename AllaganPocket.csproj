@@ -44,7 +44,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="LICENSE.md;NOTICE;THIRD-PARTY-NOTICES.md;images\icon.png">
+    <Content Include="LICENSE.md;NOTICE;THIRD-PARTY-NOTICES.md;Images\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
