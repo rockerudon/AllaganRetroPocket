@@ -25,7 +25,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Cores\*_libretro.dll;Cores\*-LICENSE.txt;Cores\*-SOURCE.txt;Cores\CORE-SOURCES.txt;Cores\GPL-*.txt" Condition="Exists('Cores')">
+    <Content Include="Cores\*_libretro.dll;Cores\*-LICENSE.txt;Cores\*-SOURCE.txt;Cores\CORE-SOURCES*.txt;Cores\GPL-*.txt" Condition="Exists('Cores')">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
